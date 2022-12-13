@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 
-s = pd.read_csv(r'/Users/calebginorio/Desktop/app/social_media_usage.csv')
+s = pd.read_csv('social_media_usage.csv')
 s.head(5)
 def clean_sm (x):
     x= np.where(x==1,1,0)
